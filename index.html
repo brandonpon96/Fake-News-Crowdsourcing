@@ -6,17 +6,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-	<!-- smooth scrolling-->
+
+   <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBVz6u9N0iVJViBngxBl9sTe0Ii5e_glYc",
+	    authDomain: "fake-news-db4eb.firebaseapp.com",
+	    databaseURL: "https://fake-news-db4eb.firebaseio.com",
+	    projectId: "fake-news-db4eb",
+	    storageBucket: "",
+	    messagingSenderId: "255369461732"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+	<script src="script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </header>
 <body>
+	<div id ="welcome">
+	</div>
 	<div id ="articles">
 	  <ul id="rig">
 	    <li>
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article1.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button"><button id="real">Real</button><button id="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -134,5 +153,21 @@
 	    </li>
 	  </ul>
 	</div>
+
+	<script>
+	$( ".rig-button" ).click(function() {
+		console.log("clicked");
+	  this.style.display = "none";
+	  var x =  $( this ).parent().children();
+	  console.log(this.style.display);
+	  x.show();
+	});
+	$("#real").click(function() {
+		console.log("real");
+	});
+	$("#fake").click(function() {
+		console.log("fake");
+	});
+	</script>
 </body>
 </html>

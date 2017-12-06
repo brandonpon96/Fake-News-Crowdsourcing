@@ -44,8 +44,22 @@ p{
     margin:0;
     padding:0;
 }
+
+.rig-button {
+  display: block;
+  width:100%;
+  position:absolute;
+  left:0;
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+  top:40%;
+  opacity:0;
+  transition:all .6s;
+}
+
 .rig-text {
-    display:block;
+    display:none;
     padding:0 30px;
     box-sizing:border-box;
     position:absolute;
@@ -105,6 +119,10 @@ p{
 
 #rig li:hover .rig-text {
     transform:translateY(0px);
+    opacity:0.9;
+}
+
+#rig li:hover .rig-button {
     opacity:0.9;
 }
 
