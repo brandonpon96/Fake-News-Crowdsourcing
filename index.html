@@ -3,7 +3,6 @@
 <header>
 	<!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
@@ -21,12 +20,9 @@
 	  firebase.initializeApp(config);
 	</script>
 
-	<script src="script.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
 </header>
 <body>
+
 	<div id ="welcome">
 	</div>
 	<div id ="articles">
@@ -35,14 +31,15 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article1.png" />
 	            <div class="rig-overlay"></div>
-	            <div class="rig-button"><button id="real">Real</button><button id="fake">Fake</button></div>
-	            <div class="rig-text">Real: <br>Fake: </div>
+	            <div class="rig-button" id="0"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
+	            <div class="rig-text"></div>
 	        </a>
 	    </li>
 	    <li>
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article2.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="1"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -50,6 +47,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article3.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="2"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -57,6 +55,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article4.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="3"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -64,6 +63,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article5.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="4"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -71,6 +71,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article6.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="5"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -78,6 +79,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article7.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="6"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -85,6 +87,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article8.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="7"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -92,6 +95,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article9.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="8"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -99,6 +103,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article10.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="9"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -106,6 +111,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article11.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="10"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -113,6 +119,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article12.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="11"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -120,6 +127,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article13.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="12"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -127,6 +135,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article14.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="13"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -134,6 +143,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/true1.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="14"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -141,6 +151,7 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/true2.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="15"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -148,26 +159,15 @@
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/true3.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="16"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
 	  </ul>
 	</div>
 
-	<script>
-	$( ".rig-button" ).click(function() {
-		console.log("clicked");
-	  this.style.display = "none";
-	  var x =  $( this ).parent().children();
-	  console.log(this.style.display);
-	  x.show();
-	});
-	$("#real").click(function() {
-		console.log("real");
-	});
-	$("#fake").click(function() {
-		console.log("fake");
-	});
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>

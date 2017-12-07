@@ -1,16 +1,16 @@
 html, body {
-	height: 100%;
-	width: 100%;
-	font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
   color: #A9A9A9;
 }
 
 a, a:hover {
-	color: inherit;
+  color: inherit;
 }
 
 img {
-	margin: auto auto;
+  margin: auto auto;
 }
 
 h1{
@@ -53,10 +53,24 @@ p{
   text-align:center;
   font-size:18px;
   font-weight:bold;
-  top:40%;
+  color: white;
+  top:20%;
   opacity:0;
   transition:all .6s;
 }
+
+.rig-button .real{
+  background: none;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.rig-button .fake{
+  background: none;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
 
 .rig-text {
     display:none;
@@ -96,6 +110,11 @@ p{
 
 #rig li:hover .rig-img {
     transform:scale(1.05);
+}
+
+.rig-text .percentage{
+  margin-top: -60px;
+  font-size: 80px;
 }
 
 /* If have the overlay layer */
@@ -153,7 +172,7 @@ footer{
 
 .inner{
   display: table;   /* Allow the centering to work */
-	margin: 0 auto;
+  margin: 0 auto;
   padding-top: 30px;
 }
 
