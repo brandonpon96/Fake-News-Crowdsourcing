@@ -1,8 +1,16 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ @font-face { font-family: basicTitleFont; src: url('basictitlefont.ttf'); } 
 html, body {
+    
   height: 100%;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   color: #A9A9A9;
+    background: #000000;
+}
+
+.main-header {
+  text-align: center;
 }
 
 a, a:hover {
@@ -16,17 +24,60 @@ img {
 h1{
   color: #A9A9A9;
 }
+h2{
+  color: #FFFFFF;
+}
 
 p{
   color: #A9A9A9;
   font-size: 16px;
   text-align: center;
+    font-family: basicTitleFont
+}
+
+p2{
+  color: #A9A9A9;
+  font-size: 12px;
+  text-align: right;
+     font-family: basicTitleFont
 }
 
 @media (max-width: 768px) {
     .navbar .navbar-collapse {
         text-align: center;
     }
+}
+
+.main {
+  
+    text-align: center;
+  width:100%;
+  padding:0 15%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: #000000;
+     font-family: basicTitleFont
+}
+.main2 {
+  
+    text-align: center;
+  width:100%;
+  padding:0 15%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: #000000;
+     font-family: basicTitleFont
+}
+.footer2 {
+font-size:8px;
+    text-align: center;
+  width:100%;
+  padding:0 20%;
+    
+    padding-top: 50px;
+    padding-bottom: 200px;
+    background: #000000;
+     font-family: basicTitleFont
 }
 
 #rig {
