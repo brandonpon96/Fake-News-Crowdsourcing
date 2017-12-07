@@ -3,34 +3,43 @@
 <header>
 	<!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-	<!-- smooth scrolling-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+   <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBVz6u9N0iVJViBngxBl9sTe0Ii5e_glYc",
+	    authDomain: "fake-news-db4eb.firebaseapp.com",
+	    databaseURL: "https://fake-news-db4eb.firebaseio.com",
+	    projectId: "fake-news-db4eb",
+	    storageBucket: "",
+	    messagingSenderId: "255369461732"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
 </header>
 <body>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-Brandon Pon
->>>>>>> f97420d0d8fd64d7b243dead9332141680a1ada1
-=======
+	<div id ="welcome">
+	</div>
 	<div id ="articles">
 	  <ul id="rig">
 	    <li>
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article1.png" />
 	            <div class="rig-overlay"></div>
-	            <div class="rig-text">Real: <br>Fake: </div>
+	            <div class="rig-button" id="0"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
+	            <div class="rig-text"></div>
 	        </a>
 	    </li>
 	    <li>
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article2.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="1"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -38,6 +47,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article3.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="2"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -45,6 +55,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article4.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="3"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -52,6 +63,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article5.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="4"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -59,6 +71,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article6.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="5"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -66,6 +79,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article7.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="6"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -73,6 +87,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article8.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="7"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -80,6 +95,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article9.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="8"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -87,6 +103,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article10.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="9"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -94,6 +111,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article11.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="10"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -101,6 +119,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article12.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="11"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -108,6 +127,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article13.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="12"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -115,6 +135,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/article14.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="13"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -122,6 +143,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/true1.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="14"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -129,6 +151,7 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/true2.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="15"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
@@ -136,11 +159,15 @@ Brandon Pon
 	        <a class="rig-cell">
 	            <img class="rig-img" alt="articlepicture" src="articles/true3.png" />
 	            <div class="rig-overlay"></div>
+	            <div class="rig-button" id="16"><h2>What do you think?</h2><button class="real">Real</button><button class="fake">Fake</button></div>
 	            <div class="rig-text">Real: <br>Fake: </div>
 	        </a>
 	    </li>
 	  </ul>
 	</div>
->>>>>>> b353a0d9ceff43211fd282246747e253d0ac95ff
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
