@@ -24,7 +24,8 @@ function ButtonClick(item, opinion) {
   num = $(item).attr('id');
   x.show();
   numerator = opinion === "Real" ? articleData[num][0] : articleData[num][1];
-  total = articleData[num][0] + articleData[num][1];
+  numerator = numerator + 1;
+  total = articleData[num][0] + articleData[num][1] + 1;
   console.log(articleData[num]);
   x[3].innerHTML = "<div class='percentage'>" + parseInt(numerator/total * 100) + 
   	"%</div>Also chose " + opinion + " out of " + total + " votes";
